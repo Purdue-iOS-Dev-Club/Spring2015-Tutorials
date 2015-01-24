@@ -34,8 +34,8 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         
         if let collegeInfo = csvArray[indexPath.row + 1] as? [String] {
-            cell.textLabel?.text = collegeInfo[0] as String // Name
-            cell.detailTextLabel?.text = collegeInfo[2] as String // Location
+            cell.textLabel?.text = collegeInfo[0] // Name
+            cell.detailTextLabel?.text = collegeInfo[2] // Location
         }
         
         return cell
