@@ -95,12 +95,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         birdNode?.physicsBody?.dynamic = true
         birdNode?.physicsBody?.allowsRotation = false
         
+        birdNode?.physicsBody?.categoryBitMask = birdCategory
+        birdNode?.physicsBody?.collisionBitMask = worldCategory | pipeCategory
+        birdNode?.physicsBody?.contactTestBitMask = worldCategory | pipeCategory
+        
         self.addChild(birdNode!)
         
         let dummy = SKNode()
         dummy.position = CGPointMake(0, groundTexture.size().height)
         dummy.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(self.frame.width, groundTexture.size().height * 2))
         dummy.physicsBody?.dynamic = false
+        dummy.physicsBody?.categoryBitMask = worldCategory
         self.addChild(dummy)
         
         pipeTexture1 = SKTexture(imageNamed: "Pipe1")
@@ -129,7 +134,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let pipe1 = SKSpriteNode(texture: pipeTexture1)
         pipe1.setScale(2.0)
         pipe1.position = CGPointMake(0, CGFloat(y))
-        pipe1.physicsBody = SKPhysicsBody(rectangleOfSize: pipeTexture1.size())
+        pipe1.physicsBody = SKPhysicsBody(rectangleOfSize: pipe1.size)
         pipe1.physicsBody?.dynamic = false
         pipe1.physicsBody?.categoryBitMask = pipeCategory
         pipe1.physicsBody?.contactTestBitMask = birdCategory
@@ -138,7 +143,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let pipe2 = SKSpriteNode(texture: pipeTexture2)
         pipe2.setScale(2.0)
         pipe2.position = CGPointMake(0, CGFloat(y) + pipe1.size.height + CGFloat(verticalPipeGap))
-        pipe2.physicsBody = SKPhysicsBody(rectangleOfSize: pipeTexture2.size())
+        pipe2.physicsBody = SKPhysicsBody(rectangleOfSize: pipe2.size)
         pipe2.physicsBody?.dynamic = false
         pipe2.physicsBody?.categoryBitMask = pipeCategory
         pipe2.physicsBody?.contactTestBitMask = birdCategory
@@ -154,8 +159,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        birdNode?.physicsBody?.velocity = CGVectorMake(0, 0)
-        birdNode?.physicsBody?.applyImpulse(CGVectorMake(0, 6))
+        if moving.speed > 0 {
+            birdNode?.physicsBody?.velocity = CGVectorMake(0, 0)
+            birdNode?.physicsBody?.applyImpulse(CGVectorMake(0, 4))
+        }
     }
     
     func clamp(#min: CGFloat, max: CGFloat, value: CGFloat) -> CGFloat {
@@ -168,9 +175,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(currentTime: CFTimeInterval) {
-        if moving.speed > 0 {
-            birdNode!.zRotation = self.clamp(min: -1, max: 0.8, value: (birdNode!.physicsBody!.velocity.dy * (birdNode!.physicsBody!.velocity.dy < 0 ? 0.003 : 0.001)))
-        }
+        birdNode!.zRotation = self.clamp(min: -1, max: 0.8, value: (birdNode!.physicsBody!.velocity.dy * (birdNode!.physicsBody!.velocity.dy < 0 ? 0.003 : 0.001)))
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
