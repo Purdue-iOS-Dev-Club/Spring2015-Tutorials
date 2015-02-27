@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKNavigationDelegate {
     
     let webView = WKWebView(frame: CGRectMake(0, 0, 320, 568))
 
@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         self.view.addSubview(webView)
         
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "printTitle", userInfo: nil, repeats: true)
+    }
+    
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        self.navigationItem.title = webView.title
+    }
+    
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        self.navigationItem.title = webView.title
     }
     
     func printTitle() {

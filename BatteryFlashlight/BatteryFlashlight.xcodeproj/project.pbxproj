@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EF249391AA138560040F5CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF249381AA138560040F5CC /* AppDelegate.swift */; };
+		5EF2493B1AA138560040F5CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2493A1AA138560040F5CC /* ViewController.swift */; };
+		5EF2493E1AA138560040F5CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2493C1AA138560040F5CC /* Main.storyboard */; };
+		5EF249401AA138560040F5CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2493F1AA138560040F5CC /* Images.xcassets */; };
+		5EF249431AA138560040F5CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF249411AA138560040F5CC /* LaunchScreen.xib */; };
+		5EF2494F1AA138560040F5CC /* BatteryFlashlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2494E1AA138560040F5CC /* BatteryFlashlightTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EF249491AA138560040F5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EF2492B1AA138560040F5CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF249321AA138560040F5CC;
+			remoteInfo = BatteryFlashlight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EF249331AA138560040F5CC /* BatteryFlashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryFlashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF249371AA138560040F5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF249381AA138560040F5CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EF2493A1AA138560040F5CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EF2493D1AA138560040F5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EF2493F1AA138560040F5CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5EF249421AA138560040F5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5EF249481AA138560040F5CC /* BatteryFlashlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatteryFlashlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF2494D1AA138560040F5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF2494E1AA138560040F5CC /* BatteryFlashlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryFlashlightTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EF249301AA138560040F5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF249451AA138560040F5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EF2492A1AA138560040F5CC = {
+			isa = PBXGroup;
+			children = (
+				5EF249351AA138560040F5CC /* BatteryFlashlight */,
+				5EF2494B1AA138560040F5CC /* BatteryFlashlightTests */,
+				5EF249341AA138560040F5CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EF249341AA138560040F5CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EF249331AA138560040F5CC /* BatteryFlashlight.app */,
+				5EF249481AA138560040F5CC /* BatteryFlashlightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EF249351AA138560040F5CC /* BatteryFlashlight */ = {
+			isa = PBXGroup;
+			children = (
+				5EF249381AA138560040F5CC /* AppDelegate.swift */,
+				5EF2493A1AA138560040F5CC /* ViewController.swift */,
+				5EF2493C1AA138560040F5CC /* Main.storyboard */,
+				5EF2493F1AA138560040F5CC /* Images.xcassets */,
+				5EF249411AA138560040F5CC /* LaunchScreen.xib */,
+				5EF249361AA138560040F5CC /* Supporting Files */,
+			);
+			path = BatteryFlashlight;
+			sourceTree = "<group>";
+		};
+		5EF249361AA138560040F5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF249371AA138560040F5CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EF2494B1AA138560040F5CC /* BatteryFlashlightTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2494E1AA138560040F5CC /* BatteryFlashlightTests.swift */,
+				5EF2494C1AA138560040F5CC /* Supporting Files */,
+			);
+			path = BatteryFlashlightTests;
+			sourceTree = "<group>";
+		};
+		5EF2494C1AA138560040F5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF2494D1AA138560040F5CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EF249321AA138560040F5CC /* BatteryFlashlight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF249521AA138560040F5CC /* Build configuration list for PBXNativeTarget "BatteryFlashlight" */;
+			buildPhases = (
+				5EF2492F1AA138560040F5CC /* Sources */,
+				5EF249301AA138560040F5CC /* Frameworks */,
+				5EF249311AA138560040F5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryFlashlight;
+			productName = BatteryFlashlight;
+			productReference = 5EF249331AA138560040F5CC /* BatteryFlashlight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EF249471AA138560040F5CC /* BatteryFlashlightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF249551AA138560040F5CC /* Build configuration list for PBXNativeTarget "BatteryFlashlightTests" */;
+			buildPhases = (
+				5EF249441AA138560040F5CC /* Sources */,
+				5EF249451AA138560040F5CC /* Frameworks */,
+				5EF249461AA138560040F5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EF2494A1AA138560040F5CC /* PBXTargetDependency */,
+			);
+			name = BatteryFlashlightTests;
+			productName = BatteryFlashlightTests;
+			productReference = 5EF249481AA138560040F5CC /* BatteryFlashlightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EF2492B1AA138560040F5CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Purdue iOS Dev Club";
+				TargetAttributes = {
+					5EF249321AA138560040F5CC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5EF249471AA138560040F5CC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5EF249321AA138560040F5CC;
+					};
+				};
+			};
+			buildConfigurationList = 5EF2492E1AA138560040F5CC /* Build configuration list for PBXProject "BatteryFlashlight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EF2492A1AA138560040F5CC;
+			productRefGroup = 5EF249341AA138560040F5CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EF249321AA138560040F5CC /* BatteryFlashlight */,
+				5EF249471AA138560040F5CC /* BatteryFlashlightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EF249311AA138560040F5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF2493E1AA138560040F5CC /* Main.storyboard in Resources */,
+				5EF249431AA138560040F5CC /* LaunchScreen.xib in Resources */,
+				5EF249401AA138560040F5CC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF249461AA138560040F5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EF2492F1AA138560040F5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF2493B1AA138560040F5CC /* ViewController.swift in Sources */,
+				5EF249391AA138560040F5CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF249441AA138560040F5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF2494F1AA138560040F5CC /* BatteryFlashlightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EF2494A1AA138560040F5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF249321AA138560040F5CC /* BatteryFlashlight */;
+			targetProxy = 5EF249491AA138560040F5CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EF2493C1AA138560040F5CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EF2493D1AA138560040F5CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EF249411AA138560040F5CC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EF249421AA138560040F5CC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EF249501AA138560040F5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EF249511AA138560040F5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EF249531AA138560040F5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BatteryFlashlight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5EF249541AA138560040F5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BatteryFlashlight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5EF249561AA138560040F5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BatteryFlashlightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatteryFlashlight.app/BatteryFlashlight";
+			};
+			name = Debug;
+		};
+		5EF249571AA138560040F5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BatteryFlashlightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatteryFlashlight.app/BatteryFlashlight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EF2492E1AA138560040F5CC /* Build configuration list for PBXProject "BatteryFlashlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF249501AA138560040F5CC /* Debug */,
+				5EF249511AA138560040F5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF249521AA138560040F5CC /* Build configuration list for PBXNativeTarget "BatteryFlashlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF249531AA138560040F5CC /* Debug */,
+				5EF249541AA138560040F5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5EF249551AA138560040F5CC /* Build configuration list for PBXNativeTarget "BatteryFlashlightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF249561AA138560040F5CC /* Debug */,
+				5EF249571AA138560040F5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EF2492B1AA138560040F5CC /* Project object */;
+}
